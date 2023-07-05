@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+ #nav{
+    position: fixed;
+    top: 2rem;
+    align-items: center;
+    left: 0rem;
+    /* background-color: red; */
+    width: 100vw;
+    display: flex ;
+        z-index: 100;
+    flex-direction: row;
+    justify-content: space-evenly;
+ /* padding: 20px; */
+}
+.nav-ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+}
+.nav-ul li{
+    transition: .7s;
+}
+.nav-ul li:hover,#nav-items-res li:hover{
+    border-style: solid;
+    border-color: black ;
+    background-color: wheat;
+    color: black;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 10px gray;
+  border-radius: 10px;
+
+}
+#nav-items-res{
+    display: none;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    
+    transition: .5s;
+    
+    color: grey;
+
+}
+#nav-items-res li{
+    margin: 20px;
+    transition: .5s;
+}
+.sgnup{
+    border-style: solid;
+    border-color: black ;
+    padding: 10px;
+    border-radius: 10px;
+ 
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    top:0rem;
+    position: relative;
+    z-index: 2;
+}
+#head{
+    width: 50vw;
+    position: relative;
+    left: 0rem;
+    background-color: white;
+    height: 100vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.dec-2{
+    position: relative;
+    top: 8rem;
+    left: 16rem;
+}
+#img{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(Decore.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0rem;
+    
+    background-color: white;
+}
+#img img{
+    position: relative;
+    top: 3rem;
+    left:  0rem;
+    object-fit: contain;
+}
+.start{
+    position: relative;
+    top: 10vh;
+    z-index: -1;
+}
+.red{
+    color: red;
+}
+.grey{
+    color: grey;
+}
+.head-text{
+    position: relative;
+    top: 13rem;
+    gap: 10px;
+    left: 10rem;
+    width: 50%;
+}
+#head h1{
+    font-size: 4rem;
+}
+.lp-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 13rem;
+    left: 12rem;
+}
+.lp-btn button{
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    opacity: .7;
+    border-radius: 10px;
+    color: white;
+}
+.lp-btn button:hover{
+    opacity: 1;
+}
+.lp-btn img{
+    position: relative;
+    top: 1rem;
+}
+#Toggle{
+    border-style: none;
+    background: transparent;
+    display: none;
+}
+#nav-items-res{
+    display: none;
+}
+#page-2{
+    margin-top: 20rem;
+    text-align: center;
+}
+#p2-main{
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.p2-div{
+    padding: 20px;
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+    width: 15%;
+text-align: center;
+transition: .5s;
+border-radius: 20px;
+}
+
+.p2-div:hover{
+    box-shadow: 10px 10px 0px 10px lightgray;
+    transform: scale(.9);
+
+}
+.special{
+    box-shadow: 10px 10px 0px 10px lightgray;
+}
+.spe-img{
+    position: relative;
+    top:0rem;
+    left:0rem;
+}
+#page-3{
+    text-align: center;
+}
+#page-3-main{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.page-3-main-img{
+    transition: .5s;
+}
+.page-3-main-img:hover{
+    transform: scale(.9);
+}
+#page4{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+    justify-content: space-evenly;
+}
+#page4-left{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+}
+.page4-left-main{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    justify-content: center;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 20px;
+}
+.over{
+
+    box-shadow: 20px 20px 20px 20px whitesmoke;
+    border-radius: 20px;
+   
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    
+    height: 21rem;
+    border-color: rgb(255, 255, 255);
+}
+.over .ln{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    width: 18rem;
+}
+.over .lk{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.over .ot{
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+}
+.blue{
+    color: cadetblue;
+}
+
+.grey1{
+    color: grey;
+}
+/* span{
+    color: blue
+} */
+.th{
+
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+    width: 14rem;
+    height: 26rem;
+    
+    padding: 24px;
+    border-color: whitesmoke;
+    left: 11rem;
+    box-shadow: 20px 20px 20px 2px lightgray;
+    display: flex;
+    opacity: 1;
+    background-color:whitesmoke;
+    flex-direction: row;
+}
+
+.ty{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0rem;
+    gap: 3px;
+    left: 2rem;
+}
+.blue{
+    color: cadetblue;
+}
+.bgh{
+    width: 10rem;
+    height: 0.5rem;
+    position: relative;
+    top: 0rem;
+    border-radius: 76px;
+    left: -3rem;
+    background: linear-gradient(to right, rgb(118,96,216) 50%, lightgrey 50%);
+}
+.bluecode{
+    color: rgb(118, 96, 216)
+}
+#page5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+#page5-left{
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+    
+   
+    text-align: start;
+}
+#page5-left h1{
+    font-size: 3rem;
+    width: 80%
+}
+#page5-right-main{
+ display: flex;
+ flex-direction: column;
+
+ box-shadow: 20px 20px 20px 20px whitesmoke;
+ background-color: white;
+ position: relative;
+ width:30rem;
+ background-color: white;
+ padding: 20px;
+ text-align: start;
+}
+#page5-right-main2{
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 20px 20px 20px 20px whitesmoke;
+    background-color: white;
+    width:30rem;
+    padding: 20px;
+    position: relative;
+    top: -3rem;
+    left: 4rem;
+    z-index: -1;
+    text-align: start;
+   }
+   #page5-btn{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+    gap: 30px;
+    
+   }
+   #page5-btn button{
+    background: none;
+    border: none;
+   }
+
+   #page5-left-btn{
+    display: flex;
+    position: relative;
+    top: 2rem;
+    gap: 20px;
+    flex-direction: row;
+   }
+   #page5-right-main img{
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+
+   }
+   #page5-right-main2 img{
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+   }
+   #page6{
+    width: 70%;
+    text-align: center;
+    border-radius: 11px;
+    padding: 26px;
+    border-top-left-radius: 62px;
+    margin: auto;
+    background: url(Group\ 42.png); 
+     background-position: top right;
+    background-image: url(Group\ 77.png);
+    background-repeat: no-repeat;
+  
+
+    margin-bottom: 5rem;
+    background-color: rgb(248, 244,253);
+    height: 23rem;
+   }
+   .page6-img{
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+   }
+   #page6 h1{
+    font-size: 2.5rem;
+    position: relative;
+    top: 3rem;
+   }
+   #page6 input{
+    width: 70%;
+    border: none;
+    padding: 15px;
+    margin-top: 7rem;
+   }
+   #page6 button{
+    
+    padding: 15px;
+    background-color: lightsalmon;
+    border-style: none;
+    padding-right: 30px;
+    padding-left: 30px ;
+    opacity: .8;
+    color: white;
+   }
+   #page6 button:hover{
+    opacity: 1;
+   }
+
+   #page8{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+   .page8-ind{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   }
+   .page8-ind h4{
+    margin-bottom: 1rem;
+   }
+   .page8-ind-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   }
+   .spe{
+    align-items: center;
+   }
+   #page9{
+    text-align: center;
+    margin-top: 5rem;
+   
+    margin-bottom: 10rem;;
+
+}
+@media (max-width: 1200px) {
+    #img img{
+        width: 30rem
+    }
+#main{
+    flex-direction: column;
+}
+    #head h1{
+        font-size: 3rem;
+    }
+    #page4{
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    #page5{
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+    }
+    #page5-left{
+        text-align: center;
+    }
+    #page6 h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 700px) {
+  .dec-2{
+    top: 3rem;
+    left: 2rem;
+  }
+  #img {
+    height: 45vh;
+  }
+    #img img{
+        width: 15rem;
+        top: 0rem;
+    }
+    .head-text{
+        width: 80%;
+    top: 8rem;
+    left: 2rem;
+    }
+    #head h1{
+        font-size: 2rem;
+    }
+    .lp-btn {
+        flex-direction: column;
+        left: 0rem;
+        top: 10rem;
+    }
+    #nav-items-res{
+        flex-direction: column;
+        display: none;
+        background-color: orange;
+        position: absolute;
+        width: 12rem;
+    left: 5rem;
+    border-radius: 5px;
+    top: 3rem;
+    }
+    .nav-ul{
+        display: none;
+    }
+    #Toggle{
+        display: block;
+    }
+    #page-2{
+        margin-top: 4rem;
+    }
+    #p2-main{
+        justify-content: center;
+        gap: 50px;
+        
+        flex-direction: column;
+    }
+    .p2-div{
+        width: 50%;
+    }
+    #page-3-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-3-main-img{
+        width: 15rem;
+    }
+    .rp3{
+        transform: scale(.5);
+    }
+    #page5-left{
+        width: 16rem
+    }
+    #page5-left h1{
+        font-size: 2rem;
+    }
+    #page5-right{
+        transform: scale(.6);
+    }
+    #page5-right-main{
+        width: 20rem;
+    }
+    #page5-right-main2{
+        width: 20rem;
+    }
+    #page6 h1{
+        font-size: 1rem;
+    }
+   
+    #page8{
+        gap: 40px;
+    }
+    .th{
+        top: 4rem;
+        left: 0rem;
+    }
+
+}
